@@ -1,0 +1,27 @@
+<div id="voting-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div>
+        <img src="" id="photo" class="photo img-center">      
+        <h2 id="modal-header" class="text-center"></h2>
+      </div>
+      <div>
+      <form id="get-code">
+        <p>W celu zapewnienia wiarygodności głosowania, oddanie głosu możliwe jest po wprowadzeniu jednorazowego kodu, 
+          który otrzymasz na swój adres e-mail.</p>
+        <input type="email" name="email" required placeholder="E-mail" class="input"/>
+        <input type="submit" value="Pobierz kod" class="input">
+      </form>
+      <p id="code-msg"></p>
+      <hr>
+      <form id="send-vote">
+            <p>Wprowadź 4-cyfrowy kod do głosowania:</p>
+            <input type="number" name="vote" id="vote" hidden/>
+            <input type="text" name="code" required placeholder="Kod głosowania" class="input"/>
+            <input type="submit" value="Wyślij głos" class="input">
+      </form>
+      <p id="vote-msg"></p>
+      </div>
+    </div>
+</div>
